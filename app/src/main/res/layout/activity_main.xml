@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/btn_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="singIn"
+         />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verification"
+         />
+
+    <Button
+    android:id="@+id/btnMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MainPage" />
+    <Button
+        android:id="@+id/btnCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoru" />
+    <Button
+        android:id="@+id/btnVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VotePage" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPayment"
+        android:text="payment accept"/>
+</LinearLayout>

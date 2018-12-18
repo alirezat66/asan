@@ -1,11 +1,86 @@
-<resources>
-
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="TitleTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textLarge</item>
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
 
+    </style>
+    <style name="TitleBigTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textXLarge</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="TitleBlueTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textLarge</item>
+        <item name="android:textColor">@color/textBlue</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="SmallBlueTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:textColor">@color/textBlue</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="TitleDarkTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textLarge</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="NormalTextOnWhite" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/gray_on_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="NormalTextLightGray" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/textGray</item>
+        <item name="colorControlActivated">@color/textGray</item>
+        <item name="android:textColorHint">@color/textGray</item>
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/textGray</item>
+        <item name="android:textSize">@dimen/textLarge</item>
+    </style>
+    <style name="MyEditTextTwo" >
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="android:textColorHint">@color/gray_on_white</item>
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">@color/blueBack</item>
+        <item name="colorAccent">@color/blueBack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="MyBlueButton" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ripple_blue</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+    </style>
 </resources>

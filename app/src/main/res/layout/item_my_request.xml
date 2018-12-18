@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="1dp"
+    android:layout_marginBottom="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="16sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_cat_title"
+            android:textSize="18sp"
+            android:textColor="#FF5D5D5D"
+            android:text="مشاوره شرکت و برند"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFB0B0B0"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/txt_title"
+            android:text="صدور حکم ورشکستگی"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="درحال بررسی"
+            android:id="@+id/txt_status"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/txt_time"
+            android:layout_marginTop="4dp"
+            android:textColor="#FF5D5D5D"
+            android:text="امروز"/>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

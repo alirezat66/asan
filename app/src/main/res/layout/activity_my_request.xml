@@ -1,0 +1,72 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/empty_layout"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_request_list"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            android:text="تاکنون درخواستی ثبت نکرده اید"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF777777"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="22.0dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="4dp"
+            android:text="دیگر نیازی به مراجعه حضوری برای یافتن پاسخ سوالات خود نداریدخیلی ساده و سریع از بهترین متخصصان سراسر کشورسوالات خود را بپرسید"/>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:textSize="16sp"
+             android:id="@+id/btn_insert_req"
+             android:paddingRight="12dp"
+             android:paddingLeft="12dp"
+             android:layout_marginTop="12dp"
+             android:background="@drawable/rounded_blue"
+             android:text="ثبت درخواست مشاروه"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FF448AFF"
+            android:layout_marginTop="4dp"
+            android:id="@+id/btn_back"
+            android:text="بازگشت به صفحه اصلی"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/ly_list">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF607D8B"
+        android:textColor="@color/white"
+        android:id="@+id/btn_back_second"
+        android:layout_alignParentBottom="true"
+        android:text="بازگشت به صفحه اصلی"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_back_second"
+        android:id="@+id/my_request_list"/>
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/inner_normal_margin"
+    app:cardElevation="2dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+
+        android:layoutDirection="rtl">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:src="@drawable/profile_img_place_holder"
+            android:id="@+id/img_profile"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_profile"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+            <TextView
+               style="@style/TitleTextView"
+                android:textSize="14sp"
+                android:id="@+id/txt_name"
+                android:textColor="#6c6c6c"
+                android:text="رضا تقی زاده"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وکیل پایه یک دادگستری"
+                android:textSize="12sp"
+                android:id="@+id/txt_education"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/gray_light"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layoutDirection="rtl">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="۲۴ رای"
+                    android:id="@+id/txt_vote_count"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_light"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | "
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_light"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="امتیاز"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_light"
+                    /><TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.8"
+                android:id="@+id/txt_score"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_light"
+                    /><TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="از ۱۰"
+                    android:textSize="10sp"
+                    android:textColor="@color/gray_light"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

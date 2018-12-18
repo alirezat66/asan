@@ -1,0 +1,37 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp"
+        android:textColor="@color/gray_key"
+        android:text="قضاوت بین المللی CFEED"
+        android:layout_marginRight="12dp"
+        android:id="@+id/txt_title"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/certificate_icon"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:id="@+id/txt_description"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10.0dp"
+        android:textColor="@color/gray_key"
+        android:text="این دوره که یکی از در این دوره یاد میگیریم که چقدر خوبه آدم در حیطه بین المللی هم حرفی برای گفتن داشته باش رو ردو بدل کنه و.."
+        android:textSize="12sp"/>
+</RelativeLayout>

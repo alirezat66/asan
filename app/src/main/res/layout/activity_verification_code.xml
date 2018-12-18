@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:passcode="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueBack"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/out_large_margin"
+            android:id="@+id/lyOne"
+
+            >
+            <TextView
+                style="@style/TitleTextView"
+                android:text="کد ۴ رقمی ارسال شده به"/>
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/txtUser"
+                android:text="09128724137"/>
+            <TextView
+                style="@style/TitleTextView"
+                android:text="را وارد نمایید"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:theme="@style/MyEditText">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textColor="@color/textGray"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="phone"
+
+                    android:layoutDirection="rtl"
+                    android:id="@+id/edtCode"
+                    android:maxLength="4"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <com.nirigo.mobile.view.passcode.PasscodeView
+            android:id="@+id/passcode_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lyOne"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+           style="@style/MyBlueButton"
+            android:textColor="@color/white"
+            android:text="ارسال مجدد کد فعالسازی"
+
+            android:visibility="gone"
+            android:id="@+id/btnSendAgain"
+            android:layout_marginRight="@dimen/out_large_margin"
+            android:layout_marginLeft="@dimen/out_large_margin"
+            android:layout_below="@id/passcode_view"
+            android:layout_marginTop="@dimen/inner_normal_margin"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passcode_view"
+            android:layout_marginTop="4dp"
+            android:id="@+id/lyTimer"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TitleTextView"
+                android:text=" ثانیه تا ارسال مجدد کد فعالسازی"
+                />
+            <TextView
+                style="@style/TitleTextView"
+                android:text=""
+                android:id="@+id/remindTime"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginRight="@dimen/out_large_margin"
+            android:layout_marginLeft="@dimen/out_large_margin"
+            android:text="تغییر شماره تلفن همراه"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/out_normal_margin"
+            android:id="@+id/btnChangePhone"
+            android:textSize="@dimen/textLarge"
+            android:background="@color/transparent"
+
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

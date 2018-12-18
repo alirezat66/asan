@@ -1,0 +1,71 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="2dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl"
+
+    android:background="@color/white"
+    android:layout_marginBottom="1dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سند خانه"
+        android:layout_marginRight="8dp"
+        android:id="@+id/txt_name"
+        android:textColor="@color/gray_key"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  |  "
+        android:visibility="visible"
+        android:textColor="@color/gray_key"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250"
+        android:id="@+id/txt_size"
+        android:textColor="@color/gray_key"
+        android:textSize="16sp" />
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" کیلو بایت"
+        android:id="@+id/txt_unit_size"
+        android:textColor="@color/gray_key"
+        android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/view_icon"
+        android:id="@+id/img_view"
+        android:padding="12dp"
+       />
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_icon"
+        android:id="@+id/img_delete"
+            android:layout_marginLeft="4dp"
+            android:visibility="visible"
+        android:padding="12dp"
+       />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textXXLarge">24sp</dimen>
+    <dimen name="textXLarge">20sp</dimen>
+    <dimen name="textLarge">18sp</dimen>
+    <dimen name="textMedium">16sp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="inner_normal_margin">8dp</dimen>
+    <dimen name="inner_big_margin">12dp</dimen>
+    <dimen name="out_normal_margin">16dp</dimen>
+    <dimen name="out_large_margin">32dp</dimen>
+    <dimen name="MPD_items_height">80dp</dimen>
+    <dimen name="MPD_items_width">80dp</dimen>
+    <dimen name="MPD_top_bar_height">80dp</dimen>
+    <dimen name="dialog_corner_radius">5dp</dimen>
+</resources>

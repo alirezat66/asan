@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/inner_normal_margin"
+    android:layout_marginLeft="@dimen/inner_big_margin"
+    android:id="@+id/cardView"
+    android:layout_marginRight="@dimen/inner_big_margin"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    app:cardElevation="1dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="4dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:id="@+id/lyState"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_state"
+            android:scaleType="fitXY"
+            android:src="@drawable/status_one"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/inner_normal_margin"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                style="@style/TitleDarkTextView"
+                android:id="@+id/txt_title"
+                android:textColor="#5d5d5d"
+                android:text="مشاوره خانواده"
+                />
+            <TextView
+                style="@style/NormalTextLightGray"
+                android:id="@+id/txt_sub_title"
+                android:layout_marginTop="2dp"
+                android:text="اجرای حکم طلاق"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/countLayout"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true">
+            <TextView
+                style="@style/TitleBlueTextView"
+                android:text="3"
+                android:id="@+id/txtCount"
+                />
+            <TextView
+                style="@style/SmallBlueTextView"
+                android:id="@+id/sub_count"
+                android:layout_marginTop="-6dp"
+                android:text="متخصص"/>
+        </LinearLayout>
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgIcon"
+            style="@style/SpinKitView.Large.MultiplePulse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            app:SpinKit_Color="@color/blueBack" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

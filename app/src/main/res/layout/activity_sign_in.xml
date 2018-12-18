@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueBack"
+    android:id="@+id/root"
+    tools:context=".MainActivity">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:fillViewport="true">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/onboarding"
+       android:id="@+id/img_onboarding"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="@dimen/out_large_margin"
+       android:layout_marginTop="30dp"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="@dimen/out_large_margin"
+       android:layout_marginRight="@dimen/out_large_margin"
+       android:layout_marginBottom="16dp"
+       android:gravity="center_horizontal"
+       >
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/login_title"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/inner_normal_margin"
+        android:theme="@style/MyEditText">
+     <android.support.design.widget.TextInputEditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:hint="@string/mobile_number"
+         android:maxLines="1"
+         android:ems="10"
+         android:textColor="@color/textGray"
+         android:selectAllOnFocus="true"
+         android:gravity="center"
+         android:inputType="phone"
+         android:layoutDirection="rtl"
+         android:id="@+id/edtPhone"
+         android:maxLength="11"
+         />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+       style="@style/MyBlueButton"
+        android:textColor="@color/textGray"
+        android:layout_marginTop="@dimen/inner_normal_margin"
+        android:id="@+id/btnSendCode"
+        android:text="@string/send_code"/>
+
+   </LinearLayout>
+  </RelativeLayout>
+ </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

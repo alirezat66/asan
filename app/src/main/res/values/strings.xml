@@ -1,3 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">lawerProject</string>
+  <string name="app_name">Asan</string>
+  <string name="login_title">عضویت یا ورود به حساب کاربری</string>
+  <string name="mobile_number">شماره تلفن همراه</string>
+  <string name="f_name">نام</string>
+  <string name="l_name">نام خانوادگی</string>
+  <string name="send_code">ارسال کد فعال سازی</string>
+  <string name="empty_request">درخواست فعالی وجود ندارد</string>
+  <string name="insert_request">ثبت درخواست مشاوره</string>
+  <string name="resource">این دوره که یکی از در این دوره یاد میگیریم که چقدر خوبه آدم در حیطه بین المللی هم حرفی برای گفتن داشته باش رو ردو بدل کنه و..</string>
+    <string name="n_code">کد ملی</string>
+    <string name="b_date">تاریخ تولد</string>
+    <string name="phone_number">تلفن همراه</string>
+  <string name="sex">جنسبت</string>
+  <string name="sex_str">جنسیت</string>
+  <string name="email">ایمیل</string>
+  <string name="back">بازگشت</string>
+  <string name="save_info">ذخیره اطلاعات</string>
+  <string name="MPD_action_done">تایید</string>
+  <string name="MPD_action_cancel">لغو</string>
+  <string name="MPD_male">مرد</string>
+  <string name="MPD_female">زن</string>
+
+  <string name="MPD_empty_message">مقدار نباید خالی باشد</string>
+  <string name="MPD_incorrect_message">لطفا مقدار صحیح را انتخاب کنید</string>
+    <string name="call_to_advisor">تماس با مشاور</string>
+  <string name="cancel_req">لغو درخواست</string>
+
+  <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+  <!--
+      This is the name that users will see when interacting with this channel.
+      It should describe the category of notifications that will be sent through this channel
+   -->
+  <string name="default_notification_channel_name" translatable="true">News</string>
 </resources>
+

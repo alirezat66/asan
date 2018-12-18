@@ -1,0 +1,43 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="right"
+        android:id="@+id/toolbar"
+        android:layoutDirection="rtl"
+        android:background="@color/blueBack"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/lyBack"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:src="@drawable/ic_arrow_forward_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نمایش سند"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <com.jsibbold.zoomage.ZoomageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/myImage"
+        />
+</RelativeLayout>

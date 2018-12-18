@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91305309587",
+    "firebase_url": "https://laweradviceandroid.firebaseio.com",
+    "project_id": "laweradviceandroid",
+    "storage_bucket": "laweradviceandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91305309587:android:4f3b4ac7dc3e47c6",
+        "android_client_info": {
+          "package_name": "ir.greencode.advicelawAndroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91305309587-nld5j914vfli137hp36cm7eocb5491qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.greencode.advicelawAndroid",
+            "certificate_hash": "cbc6be4d2a570976f217edfe74cd692e0c5dc7fc"
+          }
+        },
+        {
+          "client_id": "91305309587-cc0sr3avv36pph565vqngf4unke0unmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6CwfSXUqcSmo0MDCQpn2EHqfIx94_g8A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91305309587-cc0sr3avv36pph565vqngf4unke0unmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

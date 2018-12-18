@@ -1,0 +1,56 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:layout_marginTop="-90dp"
+    android:src="@drawable/feedback___submited"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="-50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray_dark"
+        android:text="نظرات شما را دریافت کردیم"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="از زمانی که اختصاص دادید سپاسگزاریم"
+        android:textSize="14.0sp"
+        android:textColor="@color/gray_key"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray_key"
+        android:layout_marginTop="10dp"
+        android:text="تیم پشتیبانی، تمامی بازخورد های شما را با دقت بررسی می کنند و در صورت لزوم با شما تماس خواهند گرفت"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_blue_rounnd"
+        android:text="متوجه شدم"
+        android:textColor="@color/white"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginTop="32dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100.0dp"
+        android:layout_marginRight="100dp"
+        android:textColor="@color/blueBack"
+        android:text="تماس با پشتیبانی"
+        android:layout_marginTop="20dp"
+        android:textSize="16.0sp"
+        android:background="@color/transparent"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="assetNames">
+    <option name="mapping">
+      <map>
+        <entry key="active_camera" value="ic_camera_camera" />
+        <entry key="bg-1" value="bg_1" />
+        <entry key="bg-2" value="bg_2" />
+        <entry key="bg-3" value="bg_3" />
+        <entry key="cancel" value="ic_camera_cancel" />
+        <entry key="certificate_icon_copy" value="certificate_icon" />
+        <entry key="gallery" value="ic_camera_gallery" />
+        <entry key="main_img_1" value="main_img" />
+        <entry key="onboarding_1" value="onboarding" />
+        <entry key="photo_2015_07_09_10_17_43" value="hossein_photo" />
+        <entry key="preview1_1" value="main_page_preview" />
+        <entry key="status_1" value="status_one" />
+        <entry key="status_3" value="status_three" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueBack"
+        android:paddingTop="24dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imgLogo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_insert_photo_white"
+            android:layout_margin="@dimen/out_normal_margin"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imgLogo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:text="درخواست مشاوره با"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/txt_cat_name"
+                android:textColor="@color/white"
+                android:text="ثبت شرکت و برند"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/txt_sub_cat_name"
+                android:layout_marginTop="@dimen/inner_normal_margin"
+                android:textColor="@color/white"
+                android:text="صدور احکام ورشکستگی"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/second_layout"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/out_normal_margin"
+            android:background="#4CAF50"
+            android:orientation="vertical"
+
+            android:layoutDirection="rtl">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:text="در انتظار زمان مشاوره"
+                android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/docs_recycler"
+            android:background="@color/white"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/greenBlue"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:id="@+id/btn_back"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/call_to_advisor"
+            android:id="@+id/btn_call"
+
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:background="#CCCCCC"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#e91e63"
+            android:text="@string/cancel_req"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

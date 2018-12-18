@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/header"
+        app:cardElevation="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueBack"
+        android:paddingTop="24dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imgLogo"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/out_normal_margin"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imgLogo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:text="درخواست مشاوره برای"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/txt_cat_name"
+                android:textColor="@color/white"
+                android:text="ثبت شرکت و برند"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_sub_cat_name"
+                android:layout_marginTop="@dimen/inner_normal_margin"
+                android:textColor="@color/white"
+                android:text="صدور احکام ورشکستگی"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/second_layout"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="@dimen/out_normal_margin"
+            android:gravity="center_horizontal"
+            android:id="@+id/layer_state"
+            android:background="@color/pinkLight">
+            <TextView
+                style="@style/TitleTextView"
+                android:text=""
+                android:id="@+id/txt_lawyer_count"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+
+                android:layout_marginLeft="4sp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/second_layout"
+        android:layout_above="@id/footer"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:id="@+id/lawyer_recycler"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/out_normal_margin"
+
+        android:orientation="vertical"
+
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="متن درخواست"
+            android:textColor="#5d5d5d"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/txt_description"
+            android:textColor="#777777"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/docs_recycler"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="بازگشت"
+            android:id="@+id/btn_back"
+            android:textColor="@color/white"
+            android:background="#607d8b"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#e91e63"
+            android:text="لغو"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

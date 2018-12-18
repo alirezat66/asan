@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blueBack"
+        android:paddingTop="24dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:text="تایید نهایی و پرداخت"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:id="@+id/list"
+        android:layout_above="@id/footer"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="بازگشت و ویرایش"
+            android:id="@+id/btn_back"
+            android:textColor="@color/white"
+            android:background="#607d8b"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="#448AFF"
+            android:text="پرداخت آنلاین"
+            android:id="@+id/btn_pay"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@drawable/gradiant_back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:layout_marginTop="46dp"
+        >
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="تماس ورودی"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textAllCaps="true"
+
+            />
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_remote"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/profile_img_place_holder"
+            app:civ_border_color="#5a5281"
+            app:civ_border_width="6dp" />
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14dp"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_button_red"
+            android:textSize="16sp"
+            android:src="@drawable/ic_call_end_white_24dp"
+            android:id="@+id/btn_cancel"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            />
+        <ir.greencode.advicelawAndroid.utils.SwipeButton
+            android:id="@+id/swipe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
