@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-  <string name="app_name">Asan</string>
+  <string name="app_name">ASAN</string>
   <string name="login_title">عضویت یا ورود به حساب کاربری</string>
   <string name="mobile_number">شماره تلفن همراه</string>
   <string name="f_name">نام</string>

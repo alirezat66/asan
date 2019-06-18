@@ -76,19 +76,7 @@
                 android:layout_marginTop="-6dp"
                 android:text="متخصص"/>
         </LinearLayout>
-        <com.github.ybq.android.spinkit.SpinKitView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/imgIcon"
-            style="@style/SpinKitView.Large.MultiplePulse"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
 
-            android:layout_margin="10dp"
-            android:visibility="gone"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            app:SpinKit_Color="@color/blueBack" />
 
 
     </RelativeLayout>

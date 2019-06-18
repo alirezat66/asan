@@ -13,8 +13,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.github.ybq.android.spinkit.SpinKitView;
-import com.github.ybq.android.spinkit.style.DoubleBounce;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,13 +58,11 @@ public class AdviceAdapter extends RecyclerView.Adapter<AdviceAdapter.ViewHolder
         if(data.getState()==0) {
             holder.img_state.setImageDrawable(context.getResources().getDrawable(R.drawable.status_one));
             holder.countLayout.setVisibility(View.GONE);
-            holder.imgIcon.setVisibility(View.VISIBLE);
             holder.txtCount.setTextSize(20);
 
         }else if(data.getState()==1) {
             holder.img_state.setImageDrawable(context.getResources().getDrawable(R.drawable.status_two));
             holder.countLayout.setVisibility(View.VISIBLE);
-            holder.imgIcon.setVisibility(View.GONE);
             holder.txtCount.setText(data.getLawersCont()+"");
             holder.txtCount.setTextSize(20);
 
@@ -78,7 +74,6 @@ public class AdviceAdapter extends RecyclerView.Adapter<AdviceAdapter.ViewHolder
             holder.txtCount.setText(date.dayName()+" " + date.getShDay()+" "+date.monthName());
             holder.txtCount.setTextSize(12);
             holder.txt_sub_count.setText("ساعت "+PersianCalculater.getHourseAndMin(date.getTime()));
-            holder.imgIcon.setVisibility(View.GONE);
         }
     }
 
@@ -96,8 +91,7 @@ public class AdviceAdapter extends RecyclerView.Adapter<AdviceAdapter.ViewHolder
         TextView txtCount;
         @BindView(R.id.countLayout)
         LinearLayout countLayout;
-        @BindView(R.id.imgIcon)
-        SpinKitView imgIcon;
+
         @BindView(R.id.sub_count)
         TextView txt_sub_count;
         @BindView(R.id.img_state)
